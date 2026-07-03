@@ -27,38 +27,6 @@ This repository contains my solution for SalesNow's **Web Scraping and Data Extr
 
 ---
 
-## Database Design
-
-Logical ER model for crawled data across corporate sites (Task A) and Indeed (Task B):
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
-erDiagram
-    DATA_SOURCE ||--o{ COMPANY_SEED : seeds
-    COMPANY_SEED ||--o{ PROFILE_PAGE : discovers
-    PROFILE_PAGE ||--o{ FIELD_VALUE : extracts
-    COMPANY_SEED ||--|| COMPANY_RECORD : exports
-    DATA_SOURCE ||--o{ INDEED_SCRAPE : "Task B"
-    INDEED_SCRAPE ||--o{ JOB_LISTING : yields
-
-    COMPANY_RECORD {
-        string name_jp "企業名"
-        string head_office_address "本社住所"
-        string representative_name "代表氏名"
-        string capital_stock "資本金"
-        string establishment_date "設立年月"
-    }
-
-    JOB_LISTING {
-        string title "求人タイトル"
-        string method "httpx | playwright"
-    }
-```
-
-Full schema, source mapping & field dictionary → [`docs/DATABASE.md`](docs/DATABASE.md)
-
----
-
 ## Business Context
 
 ```mermaid
@@ -126,6 +94,38 @@ flowchart LR
 ```
 
 > Full diagrams: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+
+---
+
+## Database Design
+
+Logical ER model for crawled data across corporate sites (Task A) and Indeed (Task B):
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
+erDiagram
+    DATA_SOURCE ||--o{ COMPANY_SEED : seeds
+    COMPANY_SEED ||--o{ PROFILE_PAGE : discovers
+    PROFILE_PAGE ||--o{ FIELD_VALUE : extracts
+    COMPANY_SEED ||--|| COMPANY_RECORD : exports
+    DATA_SOURCE ||--o{ INDEED_SCRAPE : "Task B"
+    INDEED_SCRAPE ||--o{ JOB_LISTING : yields
+
+    COMPANY_RECORD {
+        string name_jp "企業名"
+        string head_office_address "本社住所"
+        string representative_name "代表氏名"
+        string capital_stock "資本金"
+        string establishment_date "設立年月"
+    }
+
+    JOB_LISTING {
+        string title "求人タイトル"
+        string method "httpx | playwright"
+    }
+```
+
+Full schema, source mapping & field dictionary → [`docs/DATABASE.md`](docs/DATABASE.md)
 
 ---
 

@@ -178,7 +178,42 @@ flowchart TB
 
 ---
 
-## 4. Technology Selection Matrix
+## 4. Database ER Model
+
+Multi-source crawled data is modeled as seed → page → field → record. See [`DATABASE.md`](DATABASE.md) for the full schema.
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
+flowchart TB
+    subgraph SOURCES["Data Sources"]
+        DS1["corporate_web<br/>10 JP listed companies"]
+        DS2["indeed_vn<br/>bot-protected jobs"]
+    end
+
+    subgraph TASK_A["Task A Pipeline"]
+        SEED["COMPANY_SEED"]
+        PAGE["PROFILE_PAGE"]
+        FIELD["FIELD_VALUE"]
+        REC["COMPANY_RECORD"]
+    end
+
+    subgraph TASK_B["Task B Pipeline"]
+        INDEED["INDEED_SCRAPE"]
+        ATTEMPT["SCRAPE_ATTEMPT"]
+        JOB["JOB_LISTING"]
+    end
+
+    DS1 --> SEED --> PAGE --> FIELD --> REC
+    DS2 --> INDEED --> ATTEMPT --> JOB
+
+    style SOURCES fill:#FEF3C7,stroke:#F59E0B
+    style TASK_A fill:#DBEAFE,stroke:#2563EB
+    style TASK_B fill:#EDE9FE,stroke:#7C3AED
+```
+
+---
+
+## 5. Technology Selection Matrix
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
@@ -209,7 +244,7 @@ quadrantChart
 
 ---
 
-## 5. Engineering — Main Function Flow (Task A)
+## 6. Engineering — Main Function Flow (Task A)
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
@@ -310,7 +345,7 @@ flowchart LR
 
 ---
 
-## 6. Task B — Bot Protection Flow
+## 7. Task B — Bot Protection Flow
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
@@ -335,7 +370,7 @@ flowchart TD
 
 ---
 
-## 7. Data Flow — End to End
+## 8. Data Flow — End to End
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
@@ -368,41 +403,6 @@ flowchart LR
     style PIPELINE fill:#F0FDF4,stroke:#16A34A
     style ARTIFACTS fill:#FEF9C3,stroke:#CA8A04
     style SALESNOW_CONTEXT fill:#FCE7F3,stroke:#DB2777
-```
-
----
-
-## 8. Database ER Model
-
-Multi-source crawled data is modeled as seed → page → field → record. See [`DATABASE.md`](DATABASE.md) for the full schema.
-
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
-flowchart TB
-    subgraph SOURCES["Data Sources"]
-        DS1["corporate_web<br/>10 JP listed companies"]
-        DS2["indeed_vn<br/>bot-protected jobs"]
-    end
-
-    subgraph TASK_A["Task A Pipeline"]
-        SEED["COMPANY_SEED"]
-        PAGE["PROFILE_PAGE"]
-        FIELD["FIELD_VALUE"]
-        REC["COMPANY_RECORD"]
-    end
-
-    subgraph TASK_B["Task B Pipeline"]
-        INDEED["INDEED_SCRAPE"]
-        ATTEMPT["SCRAPE_ATTEMPT"]
-        JOB["JOB_LISTING"]
-    end
-
-    DS1 --> SEED --> PAGE --> FIELD --> REC
-    DS2 --> INDEED --> ATTEMPT --> JOB
-
-    style SOURCES fill:#FEF3C7,stroke:#F59E0B
-    style TASK_A fill:#DBEAFE,stroke:#2563EB
-    style TASK_B fill:#EDE9FE,stroke:#7C3AED
 ```
 
 ---
