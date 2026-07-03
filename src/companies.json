@@ -1,0 +1,68 @@
+[
+  {
+    "name": "ニッスイ",
+    "name_en": "Nissui",
+    "url": "https://www.nissui.co.jp/",
+    "profile_urls": ["https://www.nissui.co.jp/corporate/index.html"]
+  },
+  {
+    "name": "Ｕｍｉｏｓ",
+    "name_en": "Umios",
+    "url": "https://www.umios.com/",
+    "profile_urls": [
+      "https://www.umios.com/jp/corporate/outline/data/profile/",
+      "https://www.umios.com/jp/corporate/outline/data/office/",
+      "https://www.umios.com/jp/corporate/outline/topmessage/"
+    ],
+    "use_browser": true
+  },
+  {
+    "name": "ユキグニファクトリー",
+    "name_en": "Yukiguni Factory",
+    "url": "https://www.yukiguni-factory.co.jp/",
+    "profile_urls": ["https://www.yukiguni-factory.co.jp/company/gaiyou/"]
+  },
+  {
+    "name": "サカタのタネ",
+    "name_en": "Sakata Seed",
+    "url": "https://www.sakataseed.co.jp/",
+    "profile_urls": ["https://corporate.sakataseed.co.jp/company/profile.html"]
+  },
+  {
+    "name": "ホクト",
+    "name_en": "Hokto",
+    "url": "https://www.hokto-kinoko.co.jp/",
+    "profile_urls": ["https://www.hokto-kinoko.co.jp/corporate/kigyou/gaiyou/"]
+  },
+  {
+    "name": "ショーボンドホールディングス",
+    "name_en": "Sho-Bond Holdings",
+    "url": "https://www.sho-bondhd.jp/",
+    "profile_urls": ["https://www.sho-bondhd.jp/company/profile/"]
+  },
+  {
+    "name": "ミライト・ワン",
+    "name_en": "Mirait One",
+    "url": "https://www.mirait-one.com/",
+    "profile_urls": ["https://www.mirait-one.com/corporate/profile/"]
+  },
+  {
+    "name": "タマホーム",
+    "name_en": "Tama Home",
+    "url": "https://www.tamahome.jp/",
+    "profile_urls": ["https://www.tamahome.jp/company/profile/"]
+  },
+  {
+    "name": "極洋",
+    "name_en": "Kyokuyo",
+    "url": "https://www.kyokuyo.co.jp/",
+    "profile_urls": ["https://www.kyokuyo.co.jp/company/data/index.html"],
+    "pdf_urls": ["https://www.kyokuyo.co.jp/files/2025kyokuyoprofile.pdf"]
+  },
+  {
+    "name": "日本アクア",
+    "name_en": "Nippon Aqua",
+    "url": "https://www.n-aqua.jp/",
+    "profile_urls": ["https://www.n-aqua.jp/company/info.html"]
+  }
+]

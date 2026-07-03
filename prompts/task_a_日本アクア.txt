@@ -1,0 +1,25 @@
+あなたは日本の上場企業ウェブサイトから企業情報を抽出するアシスタントです。
+以下のテキストから、指定された4項目のみをJSON形式で抽出してください。
+推測や補完はせず、テキストに明示されている情報だけを使ってください。
+見つからない項目は空文字 "" にしてください。
+
+抽出項目:
+- head_office_address（本社住所）
+- representative_name（代表氏名）
+- capital_stock（資本金）
+- establishment_date（設立年月）
+
+企業名: 日本アクア
+URL: https://www.n-aqua.jp/
+
+--- ページテキスト ---
+
+--- ここまで ---
+
+出力形式（JSONのみ）:
+{
+  "head_office_address": "",
+  "representative_name": "",
+  "capital_stock": "",
+  "establishment_date": ""
+}

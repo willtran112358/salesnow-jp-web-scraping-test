@@ -1,0 +1,11 @@
+OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved for review).
+
+Extracted:
+{
+  "head_office_address": null,
+  "representative_name": null,
+  "capital_stock": null,
+  "establishment_date": null
+}
+
+Generated at: 2026-07-03T09:24:44.983270+00:00
