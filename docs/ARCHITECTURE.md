@@ -372,7 +372,42 @@ flowchart LR
 
 ---
 
-## 8. Module Dependency Graph
+## 8. Database ER Model
+
+Multi-source crawled data is modeled as seed → page → field → record. See [`DATABASE.md`](DATABASE.md) for the full schema.
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
+flowchart TB
+    subgraph SOURCES["Data Sources"]
+        DS1["corporate_web<br/>10 JP listed companies"]
+        DS2["indeed_vn<br/>bot-protected jobs"]
+    end
+
+    subgraph TASK_A["Task A Pipeline"]
+        SEED["COMPANY_SEED"]
+        PAGE["PROFILE_PAGE"]
+        FIELD["FIELD_VALUE"]
+        REC["COMPANY_RECORD"]
+    end
+
+    subgraph TASK_B["Task B Pipeline"]
+        INDEED["INDEED_SCRAPE"]
+        ATTEMPT["SCRAPE_ATTEMPT"]
+        JOB["JOB_LISTING"]
+    end
+
+    DS1 --> SEED --> PAGE --> FIELD --> REC
+    DS2 --> INDEED --> ATTEMPT --> JOB
+
+    style SOURCES fill:#FEF3C7,stroke:#F59E0B
+    style TASK_A fill:#DBEAFE,stroke:#2563EB
+    style TASK_B fill:#EDE9FE,stroke:#7C3AED
+```
+
+---
+
+## 9. Module Dependency Graph
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '12px'}}}%%
