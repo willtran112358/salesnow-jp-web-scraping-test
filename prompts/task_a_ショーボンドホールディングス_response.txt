@@ -8,4 +8,4 @@ Extracted:
   "establishment_date": "2008年1月4日"
 }
 
-Generated at: 2026-07-03T10:07:18.220974+00:00
+Generated at: 2026-07-03T13:43:24.455268+00:00

@@ -8,4 +8,4 @@ Extracted:
   "establishment_date": "明治44年（1911年）"
 }
 
-Generated at: 2026-07-03T10:05:54.262262+00:00
+Generated at: 2026-07-03T13:41:56.235617+00:00

@@ -27,8 +27,10 @@ Thumbs.db
 
 # Scraper artifacts
 *.log
+!docs/run-logs/
+!docs/run-logs/**
 .playwright/
-screenshots/
+/screenshots/
 .cache/
 
 # Node (if used)

@@ -209,6 +209,16 @@ python -m src.main --task b
 python -m src.main --task all
 ```
 
+### Verified execution (screenshots)
+
+Real terminal output from a successful run on Windows PowerShell:
+
+| Task A — 10 companies | Task B — Indeed | Full pipeline |
+|:---:|:---:|:---:|
+| ![Task A run](docs/screenshots/task-a-run.png) | ![Task B run](docs/screenshots/task-b-run.png) | ![Full pipeline run](docs/screenshots/full-pipeline-run.png) |
+
+See also [`docs/screenshots/README.md`](docs/screenshots/README.md) and raw logs in `docs/run-logs/`.
+
 ### Optional: Enable AI extraction
 
 ```bash
@@ -256,6 +266,11 @@ python -m src.main --task all
 | `prompts/task_a_*_response.txt` | AI レスポンスまたはルールベース結果 |
 | `result/indeed_remote_jobs.json` | 課題Bの調査結果 |
 | `prompts/task_b_*.txt` | 課題Bのプロンプト・結果 |
+| `docs/screenshots/` | 実行成功時のターミナル画面キャプチャ |
+
+### 実行確認（スクリーンショット）
+
+実際の PowerShell 実行結果: [`docs/screenshots/task-a-run.png`](docs/screenshots/task-a-run.png)
 
 ### 処理の流れ
 

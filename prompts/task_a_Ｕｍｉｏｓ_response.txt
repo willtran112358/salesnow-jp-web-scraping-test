@@ -8,4 +8,4 @@ Extracted:
   "establishment_date": "1943年3月31日"
 }
 
-Generated at: 2026-07-03T10:06:28.722434+00:00
+Generated at: 2026-07-03T13:42:32.035805+00:00

@@ -8,4 +8,4 @@ Extracted:
   "establishment_date": "1913年7月（坂田農園）"
 }
 
-Generated at: 2026-07-03T10:06:50.503298+00:00
+Generated at: 2026-07-03T13:42:55.963298+00:00

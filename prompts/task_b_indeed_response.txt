@@ -1,29 +1,24 @@
 {
   "target_url": "https://vn.indeed.com/jobs?q=remote",
-  "scraped_at": "2026-07-03T10:08:32.358851+00:00",
+  "scraped_at": "2026-07-03T13:45:02.953164+00:00",
   "bot_protection_observed": [
-    "challenge"
+    "captcha",
+    "challenge",
+    "http_403"
   ],
   "approaches": [
     {
       "method": "httpx",
       "success": false,
-      "status_code": 200,
+      "status_code": 403,
       "blocked_signals": [
-        "challenge"
+        "captcha",
+        "challenge",
+        "http_403"
       ],
-      "job_count": 8,
-      "sample_jobs": [
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
-        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ"
-      ],
-      "html_length": 1216445,
+      "job_count": 0,
+      "sample_jobs": [],
+      "html_length": 27783,
       "error": null
     },
     {
@@ -44,11 +39,11 @@
         "Remote Customer Success (1pm-10pm)",
         "Data Entry Specialist",
         "Operations Executive (FULLY REMOTE!!)",
-        "Biên Tập Viên Fanpage (Remote) - Không Yêu Cầu Kinh Nghiệm - Hà Nội",
-        "Nhân Viên Trực Tin Nhắn Part Time - Thị Trường VN",
-        "AI Specialist",
+        "Cộng Tác Viên Bán Hàng & Chăm Sóc Khách Hàng Online",
+        "Mobile App Quality Control Tester - Remote",
         "Online ESL Tutors for Young Kids",
-        "HR REMOTE - KINH NGHIỆM 1 NĂM"
+        "Biên Tập Viên Fanpage (Remote) - Không Yêu Cầu Kinh Nghiệm - Hà Nội",
+        "AI Specialist"
       ],
       "page_title": "2.000+ Remote Việc làm, tuyển dụng ở ngày 3 tháng 7 năm 2026| Indeed",
       "error": null
