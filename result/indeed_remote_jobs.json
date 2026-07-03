@@ -1,0 +1,58 @@
+{
+  "target_url": "https://vn.indeed.com/jobs?q=remote",
+  "scraped_at": "2026-07-03T10:08:32.358851+00:00",
+  "bot_protection_observed": [
+    "challenge"
+  ],
+  "approaches": [
+    {
+      "method": "httpx",
+      "success": false,
+      "status_code": 200,
+      "blocked_signals": [
+        "challenge"
+      ],
+      "job_count": 8,
+      "sample_jobs": [
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ"
+      ],
+      "html_length": 1216445,
+      "error": null
+    },
+    {
+      "method": "playwright",
+      "success": false,
+      "blocked_signals": [
+        "challenge"
+      ],
+      "job_count": 15,
+      "sample_jobs": [
+        "NHÂN VIÊN CHĂM SÓC KHÁCH HÀNG REMOTE NHÀ",
+        "Customer Service Executive - Day Shift (WFH) - Immediate Hiring",
+        "Customer Service Executive - Day Shift (WFH) - Immediate Hiring",
+        "Freelance Data Operations Specialist (Remote Independent Contractor)",
+        "[Remote] Cộng Tác Viên Thu Âm Giọng Nói (AI Trainer) – Dự Án Công Nghệ",
+        "Nhân Viên Trực Page/Sales Online (Ca Ngày) Part-Time",
+        "[Remote] Nhân viên thu thập dữ liệu hình ảnh và video",
+        "Remote Customer Success (1pm-10pm)",
+        "Data Entry Specialist",
+        "Operations Executive (FULLY REMOTE!!)",
+        "Biên Tập Viên Fanpage (Remote) - Không Yêu Cầu Kinh Nghiệm - Hà Nội",
+        "Nhân Viên Trực Tin Nhắn Part Time - Thị Trường VN",
+        "AI Specialist",
+        "Online ESL Tutors for Young Kids",
+        "HR REMOTE - KINH NGHIỆM 1 NĂM"
+      ],
+      "page_title": "2.000+ Remote Việc làm, tuyển dụng ở ngày 3 tháng 7 năm 2026| Indeed",
+      "error": null
+    }
+  ],
+  "summary": "Partial data retrieved via Playwright despite protection signals."
+}

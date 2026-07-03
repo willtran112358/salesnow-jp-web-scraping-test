@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "東京都港区赤坂三丁目3番5号",
+  "representative_name": "代表取締役社長 井上 誠",
+  "capital_stock": "75億2700万円",
+  "establishment_date": "1937年9月3日"
 }
 
-Generated at: 2026-07-03T09:26:32.415875+00:00
+Generated at: 2026-07-03T10:08:14.067033+00:00

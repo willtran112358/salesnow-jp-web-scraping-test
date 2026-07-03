@@ -33,7 +33,12 @@ def scrape_indeed_httpx() -> dict[str, Any]:
         "error": None,
     }
     try:
-        with httpx.Client(headers=DEFAULT_HEADERS, follow_redirects=True, timeout=30) as client:
+        with httpx.Client(
+            headers=DEFAULT_HEADERS,
+            follow_redirects=True,
+            verify=False,
+            timeout=30,
+        ) as client:
             response = client.get(INDEED_URL)
             result["status_code"] = response.status_code
             html = response.text

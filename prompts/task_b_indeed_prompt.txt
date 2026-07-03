@@ -1,0 +1,3 @@
+Target: https://vn.indeed.com/jobs?q=remote
+Goal: collect remote job listings (title, company, location, salary if visible).
+Approaches: httpx static fetch, then Playwright headless browser.

@@ -193,7 +193,7 @@ salesnow-jp-web-scraping-test/
 
 ```bash
 pip install -r requirements.txt
-playwright install chromium   # only needed for Task B
+python -m playwright install chromium   # JS pages (Umios) + Task B
 ```
 
 ### Run
@@ -230,7 +230,7 @@ python -m src.main --task a
 
 ```bash
 pip install -r requirements.txt
-playwright install chromium   # 課題Bのみ必要
+python -m playwright install chromium   # JSページ（Umios等）+ 課題B
 ```
 
 ### 実行方法
@@ -255,6 +255,7 @@ python -m src.main --task all
 | `prompts/task_a_*.txt` | 各社の AI プロンプト履歴 |
 | `prompts/task_a_*_response.txt` | AI レスポンスまたはルールベース結果 |
 | `result/indeed_remote_jobs.json` | 課題Bの調査結果 |
+| `prompts/task_b_*.txt` | 課題Bのプロンプト・結果 |
 
 ### 処理の流れ
 

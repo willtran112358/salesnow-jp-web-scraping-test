@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "〒108-0075 東京都港区港南2-16-2 太陽生命品川ビル20F",
+  "representative_name": "中村 文隆",
+  "capital_stock": "19億3百万円（2025年12月31日現在）",
+  "establishment_date": "2004年11月29日"
 }
 
-Generated at: 2026-07-03T09:26:43.517012+00:00
+Generated at: 2026-07-03T10:08:23.830249+00:00

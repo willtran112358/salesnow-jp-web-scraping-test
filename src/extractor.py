@@ -31,14 +31,23 @@ def _clean_value(value: str) -> str:
 
 def _clean_address(value: str) -> str:
     value = _clean_value(value)
-    value = re.split(r"\s*(?:MAP|アクセス情報|電車の場合|お車の場合)", value)[0].strip()
+    value = re.split(
+        r"\s*(?:MAP|本社地図|アクセス情報|電車の場合|お車の場合|TEL|FAX)",
+        value,
+    )[0].strip()
     return value
+
+
+def _looks_like_person_name(value: str) -> bool:
+    return bool(re.search(r"[一-龥ぁ-んァ-ンー・]{2,}", value))
 
 
 def _clean_representative(value: str) -> str:
     value = _clean_value(value)
-    value = re.split(r"\s*役員", value)[0].strip()
+    value = re.split(r"\s*役員紹介", value)[0].strip()
     value = re.sub(r"\s*CEO\s*", " ", value).strip()
+    if value.endswith("執行") or value.endswith("社長執行"):
+        return ""
     return value
 
 
@@ -60,7 +69,10 @@ def _extract_from_pairs(pairs: list[tuple[str, str]]) -> dict[str, Optional[str]
                     cleaned_field = _clean_address(cleaned)
                 elif field == "representative_name":
                     cleaned_field = _clean_representative(cleaned)
-                result[field] = cleaned_field
+                    if cleaned_field and not _looks_like_person_name(cleaned_field):
+                        continue
+                if cleaned_field:
+                    result[field] = cleaned_field
     return result
 
 

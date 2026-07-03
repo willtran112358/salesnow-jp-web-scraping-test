@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "〒108-0074 東京都港区高輪3丁目22番9号 タマホーム本社ビル",
+  "representative_name": "代表取締役会長 玉木 康裕 代表取締役社長 玉木 伸弥",
+  "capital_stock": "43億1,014万円 （2025年5月31日 現在）",
+  "establishment_date": "1998年6月3日"
 }
 
-Generated at: 2026-07-03T09:26:18.530157+00:00
+Generated at: 2026-07-03T10:07:52.484334+00:00

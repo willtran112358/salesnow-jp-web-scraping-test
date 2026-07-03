@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "〒103-0015 東京都中央区日本橋箱崎町7番8号",
+  "representative_name": "岸本 達也",
+  "capital_stock": "50億円",
+  "establishment_date": "2008年1月4日"
 }
 
-Generated at: 2026-07-03T09:25:51.262550+00:00
+Generated at: 2026-07-03T10:07:18.220974+00:00

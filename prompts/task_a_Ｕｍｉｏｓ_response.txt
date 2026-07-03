@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "〒108-8620 東京都港区高輪二丁目21番2号 THE LINKPILLAR 1 SOUTH",
+  "representative_name": "代表取締役社長執行役員 最高執行責任者 安田 大助",
+  "capital_stock": "200億円",
+  "establishment_date": "1943年3月31日"
 }
 
-Generated at: 2026-07-03T09:24:55.987538+00:00
+Generated at: 2026-07-03T10:06:28.722434+00:00

@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "新潟本社 〒949-6695 新潟県南魚沼市余川89番地",
+  "representative_name": "代表取締役社長 湯澤 尚史",
+  "capital_stock": "100百万円",
+  "establishment_date": "1983年7月"
 }
 
-Generated at: 2026-07-03T09:25:09.333019+00:00
+Generated at: 2026-07-03T10:06:40.196317+00:00

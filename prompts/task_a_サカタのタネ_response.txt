@@ -2,10 +2,10 @@ OPENAI_API_KEY not set. Used rule-based HTML/text extraction (same prompt saved 
 
 Extracted:
 {
-  "head_office_address": null,
-  "representative_name": null,
-  "capital_stock": null,
-  "establishment_date": null
+  "head_office_address": "〒224-0041 神奈川県横浜市都筑区仲町台二丁目7番1号",
+  "representative_name": "代表取締役会長 坂田 宏 代表取締役社長 加々美 勉",
+  "capital_stock": "135億円",
+  "establishment_date": "1913年7月（坂田農園）"
 }
 
-Generated at: 2026-07-03T09:25:23.408630+00:00
+Generated at: 2026-07-03T10:06:50.503298+00:00
